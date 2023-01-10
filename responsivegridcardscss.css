@@ -1,0 +1,244 @@
+@import url("fontcssyoutube.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 25px;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins-SemiBold";
+  color: black;
+  margin-block: 1rem;
+}
+
+.row {
+
+  /* For centering all the elements inside the
+  row  we use width */
+  width: 1300px;
+  margin: 0 auto;
+  /***************************************/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  text-align: center;
+
+}
+
+
+/* .featureproductimages {
+    width: 300px;
+    height: 300px;
+} */
+
+/*************** RESPONSIVE FEATURE GRID******************/
+.row2 {
+  margin-block: 30px;
+  /* makes felxible boxes */
+  display: flex;
+  /* Will provide space to the divs from both  left 
+  and right */
+  justify-content: space-between;
+  /* Centalize the container */
+  width: 1300px;
+  /* Giving height to the one row */
+  height: 390px;
+  margin: 0 auto;
+  flex-direction: row;
+  border: 1px solid black;
+  align-items: flex-start;
+}
+
+.col-3 {
+
+  width: 300px;
+  border: 1px solid black;
+}
+
+.imagesbestseller {
+  width: 100%;
+}
+
+.seller-text {
+  white-space: nowrap;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sales {
+  font-size: 13px;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.price {
+  font-size: 17px;
+  font-family: Poppins-SemiBold;
+
+}
+
+/* 
+Smallest modile Device consider be 200px
+Largest mobile device consider be 767px */
+@media only screen and (min-width:370px) and (max-width:767px) {
+  .row2 {
+    /* Make two div come down to next line */
+    flex-wrap: wrap;
+    /* makes felxible boxes */
+    display: flex;
+    /* justify-content: space-around; */
+    /* Centalize the container */
+    width: 760px;
+    margin: 0 auto;
+    flex-direction: row;
+    /* Will make the one column on the left
+  Will make one column on the right 
+  Will provide equal space between rest of the 
+  columns*/
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-block: 10px;
+    height: auto;
+  }
+
+  .col-3 {
+
+    width: 340px;
+    border: 1px solid black;
+    /* height: 275px; */
+  }
+
+  .details {
+    width: auto;
+  }
+
+  .seller-text {
+    white-space: wrap;
+
+    font-size: 4vh;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .sales {
+    font-size: 4vh;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  .price {
+    font-size: 4vh;
+    font-family: Poppins-SemiBold;
+
+  }
+}
+
+@media only screen and (min-width:200px) and (max-width:370px) {
+  .row2 {
+    flex-wrap: wrap;
+    /* makes felxible boxes */
+    display: flex;
+    /* justify-content: space-around; */
+    /* Centalize the container */
+    width: 200px;
+    margin: 0 auto;
+    flex-direction: row;
+    /* Will make the one column on the left
+  Will make one column on the right 
+  Will provide equal space between rest of the 
+  columns*/
+    justify-content: space-between;
+    border: 1px solid black;
+    /* margin-block: 10px; */
+    height: auto;
+  }
+
+  .col-3 {
+
+    width: 200px;
+    border: 1px solid black;
+    /* height: 275px; */
+  }
+
+  .details {
+    width: auto;
+  }
+
+  .seller-text {
+    white-space: wrap;
+
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .sales {
+    font-size: 2vh;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/********************************************************/
+
+
+
+/***************FEATURED RESPONSIVENESS****************/
+.rowfeature {
+  display: flex;
+  flex-direction: row;
+  /* width of whole row is 1300px */
+  width: 1300px;
+  margin: auto;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.col-4 {
+  width: 340px;
+  border: 1px solid black;
+}
+
+.featureimage {
+  width: 100%;
+}
+
+@media only screen and (min-width:500px) and (max-width:767px) {
+  .rowfeature {
+    flex-wrap: wrap;
+    width: 500px;
+
+    justify-content: center;
+    height: auto;
+  }
+
+  .col-4 {
+    width: 340px;
+    border: 1px solid black;
+  }
+
+}
+@media only screen and (min-width:200px) and (max-width:499px) {
+  .rowfeature {
+    flex-wrap: wrap;
+    width: 225px;
+
+    justify-content: center;
+    height: auto;
+  }
+
+  .col-4 {
+    width: 112px;
+    border: 1px solid black;
+  }
+
+}
