@@ -96,7 +96,7 @@ Largest mobile device consider be 767px */
     display: flex;
     /* justify-content: space-around; */
     /* Centalize the container */
-    width: 760px;
+    width: 700px;
     margin: 0 auto;
     flex-direction: row;
     /* Will make the one column on the left
@@ -149,14 +149,14 @@ Largest mobile device consider be 767px */
     display: flex;
     /* justify-content: space-around; */
     /* Centalize the container */
-    width: 200px;
+    width: 400px;
     margin: 0 auto;
     flex-direction: row;
     /* Will make the one column on the left
   Will make one column on the right 
   Will provide equal space between rest of the 
   columns*/
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid black;
     /* margin-block: 10px; */
     height: auto;
